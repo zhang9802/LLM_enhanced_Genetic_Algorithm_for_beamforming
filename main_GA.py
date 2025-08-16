@@ -282,7 +282,7 @@ if __name__ == "__main__":
     # H_all = np.ones((Nt, K)) + 1j * np.ones((Nt, K))
     # a = (- np.ones((Nt * K * 2, ))).tolist()
     # b = np.ones((Nt * K * 2, )).tolist()
-    # 价值函数，求函数最小值点 -> [1, -1, 0, 0]
+
     def Fobj(factor, Nt = Nt, K = K, H = H_all):
         w = (np.array(factor[:Nt*K]).reshape((Nt, K)) + 1j* np.array(factor[Nt*K:]).reshape((Nt, K)))
         # print(H_all)
